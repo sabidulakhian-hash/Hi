@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khian Sabidula's personal portfolio as a BSIS student.">
+  <title>Khian Sabidula | Portfolio</title>
+  <style>
+    :root {
+      --black: #050505;
+      --paper: #f4f4f2;
+      --ink: #111111;
+      --muted: #666666;
+      --line: #dededb;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("profile-background.jpeg") center 40% / cover no-repeat;
+  color: white;
+  min-height: 100vh;
+  padding: 22px 6.5% 38px;
+  display: flex;
+  flex-direction: column;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .nav-links a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #dedede;
+    }
+    .nav-links a:hover { color: white; text-decoration: underline; }
+    .hero-content {
+      width: min(100%, 680px);
+      margin: auto 0;
+      padding: 88px 0 24px;
+    }
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+    .hero .eyebrow { color: #c6c6c6; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      letter-spacing: -.065em;
+      line-height: .98;
+      margin: 0 0 20px;
+      max-width: 650px;
+    }
+    .hero-copy { max-width: 470px; color: #e4e4e4; font-size: 15px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .button {
+      display: inline-block;
+      border: 1px solid white;
+      padding: 10px 15px;
+      font-size: 12px;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+    .button.primary { background: white; color: black; }
+    .button:hover { background: #d9d9d9; color: black; }
+    main { max-width: 900px; margin: 0 auto; }
+    section { padding: 54px 6.5%; border-bottom: 1px solid var(--line); }
+    section h2 {
+      font-size: clamp(27px, 4vw, 36px);
+      line-height: 1.1;
+      letter-spacing: -.05em;
+      margin-bottom: 15px;
+    }
+    .section-copy { max-width: 650px; color: #505050; font-size: 14px; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+    .card {
+      background: var(--white);
+      border: 1px solid #e3e3e0;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .card h3 { font-size: 15px; margin-bottom: 7px; }
+    .card p { color: #555; font-size: 13px; margin-bottom: 0; }
+    .project-link { display: inline-block; margin-top: 12px; font-size: 12px; font-weight: 700; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
+    .skill {
+      border: 1px solid #d6d6d2;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    .contact-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 20px; }
+    .contact-links a { font-size: 13px; font-weight: 700; overflow-wrap: anywhere; }
+    footer { text-align: center; padding: 20px; font-size: 11px; color: #666; }
+    @media (max-width: 600px) {
+      .hero { min-height: 590px; padding-top: 18px; }
+      nav { align-items: flex-start; flex-direction: column; gap: 13px; }
+      .nav-links { gap: 13px; }
+      .hero-content { padding-top: 75px; }
+      .hero-copy { font-size: 14px; }
+      section { padding-top: 42px; padding-bottom: 42px; }
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">Khian Sabidula.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">BSIS Student · Personal Portfolio</p>
+      <h1>Hello,<br>I'm Khian.</h1>
+      <p class="hero-copy">I'm a creative person who enjoys exploring new interests, learning new skills, and finding inspiration in everyday life. Welcome to my little corner of the internet.</p>
+      <div class="actions">
+        <a class="button primary" href="#about">Get to know me ↓</a>
+        <a class="button" href="#projects">Explore my work</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <p class="eyebrow">01 / About me</p>
+      <h2>A little about me.</h2>
+      <p class="section-copy">Hi, I'm Khian Sabidula, a second-year Bachelor of Science in Information Systems (BSIS) student at Dr. Filemon C. Aguilar Memorial College of Las Piñas (DFCAMCLP). I'm an aspiring IT professional who enjoys learning new things, solving problems, and developing my technical skills. I believe that every experience is a chance to improve, both professionally and personally.</p>
+    </section>
+
+    <section id="education">
+      <p class="eyebrow">02 / Education</p>
+      <h2>My education.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Elementary</h3>
+          <p>Palañgue Elementary School</p>
+        </article>
+        <article class="card">
+          <h3>Junior High School</h3>
+          <p>Naic Integrated National High School</p>
+        </article>
+        <article class="card">
+          <h3>Senior High School</h3>
+          <p>Parañaque National High School – Main</p>
+          <p>TVL – ICT, Computer Systems Servicing (CSS)</p>
+        </article>
+        <article class="card">
+          <h3>College</h3>
+          <p>Dr. Filemon C. Aguilar Memorial College of Las Piñas (DFCAMCLP)</p>
+          <p>Bachelor of Science in Information Systems (BSIS) · Second Year</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="interests">
+      <p class="eyebrow">03 / My interests</p>
+      <h2>Things I enjoy.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Anime &amp; K-dramas</h3>
+          <p>I enjoy watching anime and Korean dramas, especially stories that keep me interested in the characters and their journeys.</p>
+        </article>
+        <article class="card">
+          <h3>Dogs</h3>
+          <p>I love dogs and the happiness and companionship they bring.</p>
+        </article>
+        <article class="card">
+          <h3>Cooking</h3>
+          <p>I enjoy cooking and trying things in the kitchen.</p>
+        </article>
+        <article class="card">
+          <h3>Creative exploration</h3>
+          <p>I like exploring new interests, learning from experiences, and finding my own way to express ideas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="eyebrow">04 / Skills</p>
+      <h2>What I bring.</h2>
+      <h3>Technical skills</h3>
+      <div class="cards">
+        <article class="card">
+          <h3>HTML &amp; CSS</h3>
+          <p>Learning to build and style web pages using HTML and CSS.</p>
+        </article>
+        <article class="card">
+          <h3>C++ Fundamentals</h3>
+          <p>Practicing programming basics, user input, conditions, and loops.</p>
+        </article>
+        <article class="card">
+          <h3>Computer Systems Servicing</h3>
+          <p>Basic computer hardware and software troubleshooting, maintenance, and setup.</p>
+        </article>
+        <article class="card">
+          <h3>Networking Basics</h3>
+          <p>Learning about network connections, Ethernet cabling, and basic network configuration.</p>
+        </article>
+      </div>
+      <h3 style="margin-top:30px">Soft skills</h3>
+      <div class="skill-list">
+        <span class="skill">Problem-solving</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Active listening</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Adaptability</span>
+        <span class="skill">Time management</span>
+        <span class="skill">Decision-making</span>
+        <span class="skill">Willingness to learn</span>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <p class="eyebrow">05 / Certificates</p>
+      <h2>Training &amp; certification.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>National Certificate II (NC II)</h3>
+          <p>Computer Systems Servicing (CSS)</p>
+          <p>Technical-vocational certification in computer systems servicing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <p class="eyebrow">06 / Achievements</p>
+      <h2>Milestones I'm proud of.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>High School Graduate with Honors</h3>
+          <p>Recognized with honors upon graduating from senior high school.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="looking-for">
+      <p class="eyebrow">07 / What I'm looking for</p>
+      <h2>Ready to learn and grow.</h2>
+      <p class="section-copy">I'm looking for opportunities that challenge me to apply my current skills, gain practical experience, and learn from others. I hope to grow not only as a programmer and future IT professional, but also as a person—building confidence, improving my abilities, and making a positive contribution wherever I work.</p>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">08 / Projects</p>
+      <h2>My projects.</h2>
+      <p class="section-copy">I'm still building my portfolio. This section can feature my school assignments, website exercises, and other projects as I complete them.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>HTML Practice</h3>
+          <p>A collection of beginner web design exercises and pages created while learning HTML.</p>
+          <a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer">Add project link ↗</a>
+        </article>
+        <article class="card">
+          <h3>C++ Practice Programs</h3>
+          <p>Small programs made to practice programming fundamentals and improve problem-solving skills.</p>
+          <a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer">Add project link ↗</a>
+        </article>
+        <article class="card">
+          <h3>Networking Coursework</h3>
+          <p>Learning materials and activities about internetworking, the OSI model, TCP/IP, and Ethernet cabling.</p>
+          <a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer">Add project link ↗</a>
+        </article>
+        <article class="card">
+          <h3>More projects coming soon</h3>
+          <p>I'll add more school and personal projects here as I continue learning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">09 / Contact</p>
+      <h2>Let's connect.</h2>
+      <p class="section-copy">Thanks for visiting my portfolio. You can find my work on GitHub or connect with me through the links below.</p>
+      <div class="contact-links">
+        <!-- Replace the example links below with your own public contact details. -->
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+        <a href="mailto:your.email@example.com">Email me ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year">2026</span> Khian Sabidula. Made with care.</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
